@@ -46,14 +46,57 @@ body {
   animation: gradient-ani 5s ease infinite;
 }
 
-.indexForm {
-  text-align: center;
+#indexMain .card {
+  background: whitesmoke;
+  color: #2e2f2f;
   padding: 1rem;
+  border-radius: 1rem;
+}
+
+#indexMain .card input {
+  padding: .5rem .5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+
+  text-align: center;
+  font-size: 18px;
+}
+
+#indexMain .card input:hover {
+  border-radius: 1rem;
+  border: none;
+}
+
+#indexMain .card input:focus {
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+#indexMain .card button {
+  padding: .5rem;
+  border: none;
+  background: #fe6e6f;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#indexMain .card button:hover {
+  border-radius: 1rem;
+  opacity: .6;
+  cursor: pointer;
 }
 
 /* Dark Mode */
 body.dark .hover {
   background: rgba(0, 0, 0, 0.6);
+}
+
+body.dark #indexMain .card {
+  background: #2e2f2f;
+  color: whitesmoke;
 }
 
 @-webkit-keyframes gradient-ani {
